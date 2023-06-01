@@ -77,7 +77,34 @@ module.exports = {
                             postcssOptions:{
                                 plugins:[
                                     [
-                                        "postcss-perset-env",
+                                        "postcss-preset-env",
                                         {
-                                            browsers:
-                  
+                                            browsers:'last 2 versions'
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    },
+                    "less-loader"
+                ]
+            }
+        ],
+    },
+    mode:"production",
+
+    // 配置html插件
+    plugins:[
+        new CleanWebpackPlugin(),
+        new  HTMLWebpackPlugin({
+            // title:'hahah'
+            // 按照模板生成html文件
+            template:'./src/index.html'
+        }),
+    ],
+
+    // 用来设置引用模块
+    resolve:{
+        extensions:['.ts','.js']
+    }
+}
