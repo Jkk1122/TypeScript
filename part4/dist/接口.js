@@ -17,10 +17,10 @@
     const obj1 = {
         name: 'jijiba',
         age: 23,
-        gender: 'nan'
+        gender: 'nan',
     };
     const obj = {
         name: 'ww',
-        age: 3
+        age: 3,
     };
 })();

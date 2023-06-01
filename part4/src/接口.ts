@@ -37,7 +37,8 @@
     class Myclass implements myInterface{
         name:string;
         age:number;
-        gender:string
+        gender:string;
+
         constructor(name:string,age:number,gender:string){
             this.name = name
             this.age = age
@@ -54,12 +55,12 @@
     const obj1:myInterface = {
         name:'jijiba',
         age:23,
-        gender:'nan'
+        gender:'nan',
     }
 
     const obj:Mytype = {
         name:'ww',
-        age:3
+        age:3,
     }
 
 })()
