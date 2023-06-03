@@ -2,7 +2,7 @@
 // 定义记分牌的类
 class ScorePanel{
     score:number = 0;
-    level:number = 1;
+    level:number = 0;
     // 分数和等级元素  在构造函数上进行初始化
     scoreEle:HTMLElement;
     levelEle:HTMLElement;
@@ -29,10 +29,11 @@ class ScorePanel{
     // 等级提升
     levelUp(){
         // 等级上限
-        if(this.level <this.maxLevel){
+        if(this.level < this.maxLevel){
             this.level++;
             this.levelEle.innerHTML = this.level+''
         }
+        
     }
 
 }
